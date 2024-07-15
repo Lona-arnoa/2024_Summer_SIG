@@ -1,0 +1,67 @@
+선물 추천 프로그램
+
+입력 : ~~에게 ~를 줄려고해. 추천해  줄수 있을까? (챗봇에게 대화)
+출력 : ~~를 추천해드릴게요..
+
+
+I : 대학생 남성인 내 친구 @@이에게 생일 선물을 주려고 해. 추천해 줘.
+라고 하면 대학생, 남성, 생일 이라는 키워드를 요약해서 찾은 뒤, 그 후 네이버에 검색하여 크롤링 한다고 할 때, 이 요약을 어떻게 할지(API 사용?) 정해야함
+
+그리고 네이버 블로그만 긁을건지, 카페도 포함해서 긁을건지? / 몇 페이지를 긁을건지? 를 정해야함
+
+
+또한 크롤링 하고 나서 나온 키워드를 글에서 어떻게 간추리는지(ex. 태블릿, 노트북, 시계 처럼 깔끔하게 단어가 나와야함) 를 고려한 뒤에
+
+
+크롤링을 해보고, 나온 결과가 중복성이 있을 수 있음(ex. 아이패드, 태블릿/키보드, 무선 키보드 등 각각 상하 관계에 해당하는 단어)
+
+일단은 크롤링 해서 데이터를 만들어 본 뒤에, 실행이 잘 되는지 까지만 만들어 본 뒤에 위의 문제는 api 사용 등을 통해 개선 해 나가면 될 듯.
+
+결과 출력은 일단은 문자로 1. 태블릿 2. 키보드 이런식으로 간단하게 해 보고, 잘 된다면 그후에 rag 모델 사용해보기. / 발표 때 결과 UI를 워드클라우드로 구현해도 좋다고 했었음.
+꼭 문장으로 출력 안해도 된다는 점 생각하기.
+
+1. 입력 받을 문장 요약 하고
+2. 요약 토대로 네이버 검색 후 글 크롤링
+3. 크롤링 한 글에서 단어 뽑아서
+4. 그대로 추천
+
+
+
+
+네이버 블로그, 카페 긁기
+
+그 후 데이터베이스를 만든 뒤, 거기서 긁으면 될려나?
+
+streamlit api를 이용하여 사이트를 만들 수 있음...
+
+
+사이트를 만들게 되면 도메인을 하나 쓸건지? or html로 구동되게 할 건지 궁금함.
+
+
+https://blog.firstpenguine.school/106 streamlit 배포법
+https://velog.io/@ooo3289/lottie.js-htmljs-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0 애니메이션 추가
+https://zzsza.github.io/mlops/2021/02/07/python-streamlit-dashboard/ steramlit 사용법
+
+https://blog.firstpenguine.school/105 streamlit css 적용방법
+
+https://wonhwa.tistory.com/8 네이버뉴스 크롤링
+
+cd C:\Users\goaqj\IdeaProjects\SIG_2024_Summer\
+streamlit run pages\test.py
+---------------------
+
+추가 해볼만한거?(기능)
+
+최근 추천 많이 받은 항목 나열
+
+-----------------
+
+20대 남자 생일 선물 검색 링크
+
+https://search.naver.com/search.naver?nso=&page=2&query=20%EB%8C%80+%EB%82%A8%EC%9E%90+%EC%83%9D%EC%9D%BC+%EC%84%A0%EB%AC%BC&sm=tab_pge&start=1&where=web
+https://search.naver.com/search.naver?nso=&page=3&query=20%EB%8C%80+%EB%82%A8%EC%9E%90+%EC%83%9D%EC%9D%BC+%EC%84%A0%EB%AC%BC&sm=tab_pge&start=16&where=web
+https://search.naver.com/search.naver?nso=&page=4&query=20%EB%8C%80+%EB%82%A8%EC%9E%90+%EC%83%9D%EC%9D%BC+%EC%84%A0%EB%AC%BC&sm=tab_pge&start=31&where=web
+
+네이버 오픈 api
+https://developers.naver.com/docs/common/openapiguide/apilist.md
+
