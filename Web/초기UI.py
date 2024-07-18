@@ -33,7 +33,7 @@ if user_input := st.chat_input("질문을 입력하세요."):
     st.session_state["messages"].append(ChatMessage(role="user", content=user_input))
 
     # LLM을 사용하여 AI의 답변을 생성
-
+# 36줄 주석 추가함.
 
     # AI의 답변
     with st.chat_message("assistant"):
