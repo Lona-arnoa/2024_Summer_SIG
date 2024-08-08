@@ -10,7 +10,8 @@ h1 {
 
 h2 { /* 디자인 보류... 뺄 수도 있음 */
     font-family: 'Jua', sans-serif; /* 제목 글꼴 설정 */
-    font-size: 25px; /* 제목 글자 크기 설정 */
+    font-weight: 100; /* 제목 글자 두께 설정 */
+    font-size: 30px; /* 제목 글자 크기 설정 */
     color:black; /* 제목 글자 색상 설정 */
     margin-left: 400px; /* 왼쪽으로 20px 이동 */
 }
