@@ -29,6 +29,7 @@ h2 { /* 디자인 보류... 뺄 수도 있음 */
 .search-input { 
     padding: 5px; /* 입력창 내부 여백 설정 */
     border: 3.5px solid #2f393ea3; /* 입력창 테두리 설정 */
+    border-radius: 15px; /* 입력창 모서리 둥글게 설정 */
     font-size: 16px; /* 입력창 글자 크기 설정 */
     width: 300px; /* 입력창 너비 설정 */
     text-align: center; /* 입력된 텍스트 중앙 정렬 */
@@ -40,6 +41,7 @@ h2 { /* 디자인 보류... 뺄 수도 있음 */
     background-color: #29435e;  /* 버튼 배경색 설정 */
     color: white; /* 버튼 글자 색상 설정 */
     font-size: 16px;  /* 버튼 글자 크기 설정 */
+    border-radius: 15px; /* 입력창 모서리 둥글게 설정 */
     cursor: pointer; /* 버튼 위에 마우스 포인터가 있을 때 손가락 모양으로 변경 */
     margin-left: 1.5px; /* 검색창과 버튼 사이의 간격 설정 */
     width: 75px; /* 버튼 너비 설정 */
