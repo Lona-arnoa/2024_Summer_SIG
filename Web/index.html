@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- 이 문서가 HTML5 문서임을 나타냄 -->
+<html lang="ko"> <!-- 이 웹페이지의 언어가 한국어(ko)임을 나타냄 -->
+<head>
+    <meta charset="UTF-8"> <!-- 웹페이지의 문자 인코딩이 UTF-8임을 나타냄 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 웹페이지가 최신버전의 Internet Explorer에 최적화되도록 설정함. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 웹페이지가 다양한 디바이스 화면크기에 맞게 최적화되도록 설정함. -->
+    <title>Present Picks</title> <!-- 웹페이지 제목 설정 -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"> <!-- 구글 폰트 API를 사용하여 "Allura" 폰트를 웹 페이지에 적용함. -->
+    <link rel="stylesheet" href="static/styles.css"> <!-- 외부 CSS 파일인 "styles.css"를 웹 페이지에 적용함. -->
+</head>
+<body>
+    <div class="container"> <!-- 컨테이너 div 추가 -->
+        <h1>Present Picks</h1>
+        <div class="search-container"> <!-- 검색창을 감싸는 div 추가 -->
+            <form> <!-- form 태그 추가 -->
+                <input type="text" id="search" class="search-input" placeholder="선물 추천 키워드를 입력하세요"> <!-- 클래스 추가 -->
+                <button id="search-button" class="search-button">검색</button> <!-- 클래스 추가 -->
+            </form>
+        </div>
+        
+        <div id="results">
+            <h2>추천 상품</h2>
+            <ul id="product-list">
+                <!-- 결과가 여기에 표시됩니다. -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- 외부 JavaScript 파일인 "script.js"를 웹 페이지에 적용함. -->
+</body>
+</html>
