@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html> <!-- 이 문서가 HTML5 문서임을 나타냄 -->
 <html lang="ko"> <!-- 이 웹페이지의 언어가 한국어(ko)임을 나타냄 -->
 <head>
@@ -26,7 +27,7 @@
             </ul>
         </div>
     </div>
-    <script src="script.js"></script> <!-- 외부 JavaScript 파일인 "script.js"를 웹 페이지에 적용함. -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- 외부 JavaScript 파일인 "script.js"를 웹 페이지에 적용함. -->
 
 </body>
 </html>
