@@ -1,11 +1,14 @@
+/* styles.css*/
+
 /* 제목 디자인 */
 h1 {
     font-family: 'Allura', cursive; /* 제목 글꼴 설정 */
-    font-size: 90px; /* 제목 글자 크기 설정 */
+    font-size: 100px; /* 제목 글자 크기 설정 */
     font-weight:bold; /* 제목 글자 두께 설정 */
     color:black; /* 제목 글자 색상 설정 */
     text-align: center; /* 제목 중앙 정렬 */
-    margin-bottom: 5px; /* 제목 아래 여백 설정 */
+    margin-bottom: 1px; /* 제목 아래 여백 설정 */
+    margin-top: 5px;
 } 
 
 h2 { 
@@ -21,7 +24,7 @@ h2 {
      /* 검색창 위치 */
 .search-container form{ 
     display: flex; /* 검색창과 버튼을 가로로 배치 */
-    padding: 10px 0; /* 제목과의 간격 조정 (상하 여백) */
+    padding: 1px 0; /* 제목과의 간격 조정 (상하 여백) */
     justify-content: center; /* 검색창과 버튼을 가로 방향 중앙 정렬 */
 }
 
